@@ -377,7 +377,7 @@ main p#Finintroduccion{
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom:100px;
-    background-image: url('/imagenes/izquierda.png'), url('/imagenes/abajo.png'), url('/imagenes/derecha.png');
+    background-image: url('imagenes/izquierda.png'), url('imagenes/abajo.png'), url('imagenes/derecha.png');
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: left  center, bottom center,right center;
     background-size: auto 100%, 99% auto, auto 100%;
@@ -386,7 +386,7 @@ main p#Finintroduccion{
 .cierre{
     width: 100%;
     min-height: 200px;
-    background-image: url('/imagenes/abajo.png');
+    background-image: url('imagenes/abajo.png');
   
     background-repeat: no-repeat;
     background-position: center bottom;
