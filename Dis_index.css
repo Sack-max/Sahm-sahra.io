@@ -1,0 +1,512 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&family=Ribeye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pompiere&family=Ribeye&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color:cornflowerblue;
+}
+header{
+    position: fixed;
+    display:flex;
+    width: 100%;
+    height:89px;
+    background-color:dodgerblue;
+    align-items: flex-start; 
+    justify-content: space-between;
+    padding: 5px 10px;
+    /*titulo de la pagina*/
+    h1{
+        
+        font-family: 'Pompiere', cursive;
+        color: white;
+        font-size: 60px;
+        margin-left: 5px;
+        white-space: nowrap;
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: white;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 2px;
+        text-shadow:4px 3px 6px white;
+    }
+    /*titulo de la pagina y es el estilo del.. nombre-*/
+    /*botones- y sus animaciones (  esto NO SE  toca)*/
+    #navegacion{
+        /*ajuste espacio en los botones ( el nav y todo eso*/
+        gap: 100px;
+        display:flex;
+        /*ajuste espacio en los botones ( el nav y todo eso*/
+         /*Esta parte de aca es la que.. define un poco la fuente de los botones. y que a pasar para encima baje*/
+        a{
+            background-color: dodgerblue;
+            width:150px;
+            height:40px;
+            font-family: 'Ribeye', cursive;
+            color: white;
+            font-size: 20px;
+            margin-right: 20px;
+            transition: all 0.3s ease-in-out;
+            text-shadow: 2px 2px 4px gray;
+            padding: 10px;
+        }
+        a:hover {
+
+        
+        transform: translateY(30px);
+            
+    }
+    /*Esta parte de aca es la que.. define un poco la fuente de los botones y que al pasar por encima baje para abajo.*/
+    }
+    /*esta parte define el boton de inicio.*/
+    a.inicio{
+        position:relative;
+        display:inline-block;
+    }
+    .boton{ 
+
+        z-index:2;
+        top: 0;
+        left:0;
+        width:125px;
+        height: 60px;
+        object-fit: contain;
+        display:block;
+        position:absolute;
+    
+    }
+    /*esta parte define el boton de inicio.*/
+    /*controlador de la imagen del boton inicio y de sam*/
+    .sam {
+        width: 100px;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        position: absolute;
+        z-index: 3;
+        left: calc(50% + 6px);
+        top: -55px;
+        transform: translateX(-50%);
+        opacity: 0;
+        pointer-events: none;
+        transition: top 0.3s ease, opacity 0.3s ease;
+    }
+
+
+    a.inicio:hover .sam {
+
+        opacity: 1;
+    }
+    /*controlador de la imagen del boton inicio y de sam*/
+    /*propiedades del boton de galeria*/
+    a.galeria{
+        position:relative;
+        display:inline-block;
+        width:125px;
+        height:60px;
+        z-index:1;
+    }
+    .botonG{
+        z-index:2;
+        top: 0;
+        left:0;
+        width:125px;
+        height: 60px;
+        object-fit: contain;
+        display:block;
+        position:absolute;
+
+    }
+    /*propiedades del boton de galeria*/
+    /*controlador del del boton de galeria*/
+    .Sahraboton{
+        width: 150px;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        position: absolute;
+        z-index: 3;
+        left: calc(50% + 70px);
+        top: -50px;
+        transform: translateX(-50%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: top 0.3s ease, opacity 0.3s ease;
+
+    }
+    a.galeria:hover .Sahraboton{
+            opacity:1;
+            visibility: visible;
+            
+
+    }
+     /*controlador del del boton de galeria*/
+    a.historia{
+    position:relative;
+    display:inline-block;
+    width:125px;
+    height:60px;
+    z-index:1;
+    }
+    .botonH{
+        z-index:2;
+        top: 0;
+        left:0;
+        width:125px;
+        height: 60px;
+        object-fit: contain;
+        display:block;
+        position:absolute;
+
+    
+    }
+    .sahm_sahra{
+        width: 150px;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        position: absolute;
+        z-index: 3;
+        left: calc(50% + -110px);
+        top: -60px;
+        transform: translateX(-50%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: top 0.3s ease, opacity 0.3s ease;
+   
+    }
+    .historia:hover .sahm_sahra{
+        opacity:1;
+            visibility: visible;
+            
+
+    }
+
+/*botones- y sus animaciones (  esto NO SE  toca)*/
+}
+/*Estilos de los primeros 2 parrafos*/
+main p#intro{
+    text-align:justify;
+    text-shadow: 2px 2px 4px #333333;
+    font-family: 'Indie Flower', cursive;
+    padding: 100px;
+    margin-top: -100px;
+    font-size: 30px;
+    color:black;
+    max-width: 700ch;
+    background-image: url('imagenes/marco.png');
+    background-position-x: 40px;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    background-size:1100px 400px;
+
+}
+main p#intro2{
+    text-align:right;
+    text-shadow: 2px 2px 4px #333333;
+    font-family: 'Indie Flower', cursive;
+    padding: 100px;
+    padding-right: 100px;
+    margin-right:40px;
+    font-size: 30px;
+    color:black;
+
+    background-image: url('imagenes/marco.png');
+    background-position-x: 98%;
+    background-position-y: 20px;
+    background-repeat: no-repeat;
+    background-size:800px 300px;
+
+}
+/*Estilos de los primeros 2 parrafos*/
+
+main div.ExplicacionTripleS{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+main div.textoTriples{
+    flex: 1;
+}
+main img.jumm{
+    width: 520px;
+    max-width: 40%;
+    height: 600px;
+    object-fit: contain;
+    align-self: flex-start;
+    margin: 0 100px 0 0;
+}
+
+
+main p#intropart2{
+     text-align:justify;
+    text-shadow: 2px 2px 4px #333333;
+    font-family: 'Indie Flower', cursive;
+    padding: 100px;
+    font-size: 30px;
+    color:black;
+    max-width: 700ch;
+    background-image: url('imagenes/marco.png');
+    background-position-x: 0%;
+    background-position-y: 30%;
+    background-repeat: no-repeat;
+    background-size:700px 560px;
+    
+
+}
+main p#intropart3{
+     text-align:justify;
+    text-shadow: 2px 2px 4px #333333;
+    font-family: 'Indie Flower', cursive;
+    padding: 100px;
+    margin-top: -100px;
+    font-size: 30px;
+    color:black;
+    max-width: 700ch;
+    background-image: url('imagenes/marco.png');
+
+    background-repeat: no-repeat;
+    background-size:1390px 390px;
+}
+main p#intropart4{
+     text-align:justify;
+    text-shadow: 2px 2px 4px #333333;
+    font-family: 'Indie Flower', cursive;
+    padding: 100px;
+    margin-top: 20px;
+    font-size: 30px;
+    color:black;
+    max-width: 700ch;
+    background-image: url('imagenes/marco.png');
+
+    background-repeat: no-repeat;
+    background-size:1390px 350px;
+   
+}
+main p#Finintroduccion{
+     text-align:justify;
+    text-shadow: 2px 2px 4px #333333;
+    font-family: 'Indie Flower', cursive;
+    padding: 100px;
+    margin-top: 20px;
+    font-size: 30px;
+    color:black;
+    max-width: 700ch;
+    background-image: url('imagenes/marco.png');
+
+    background-repeat: no-repeat;
+    background-size:1490px 290px;
+   
+}
+
+.descripciontripleS{
+    display:flex;
+    gap:30px
+}
+
+.descripciontripleS #sam{
+         text-align:justify;
+    text-shadow: 2px 2px 4px #23474F;
+    font-family: 'Indie Flower', cursive;
+    padding: 100px;
+    margin-top: 20px;
+    font-size: 30px;
+    color:#85ECFF;
+    max-width: 35ch;
+    /*background-image: url('imagenes/marco.png');*/
+
+    background-repeat: no-repeat;
+    background-size:1390px 350px;
+
+}
+.descripciontripleS #textSah{
+             text-align:justify;
+    text-shadow: 2px 2px 4px #FF5E5E;
+    font-family: 'Indie Flower', cursive;
+    padding: 100px;
+    margin-top: 20px;
+    font-size: 30px;
+    color:#BD1E1E;
+    max-width: 35ch;
+    /*background-image: url('imagenes/marco.png');*/
+
+    background-repeat: no-repeat;
+    background-size:1390px 350px;
+}
+.descripciontripleS #Sack{
+    text-align:justify;
+    text-shadow: 2px 2px 4px #0500FF;
+    font-family: 'Indie Flower', cursive;
+    padding: 100px;
+    margin-top: 20px;
+    font-size: 30px;
+    color:#1F1E73;
+    max-width: 35ch;
+    /* background-image: url('imagenes/marco.png');*/
+
+    background-repeat: no-repeat;
+    background-size:1390px 350px;
+}
+
+.sack{
+    text-align:justify;
+    text-shadow: 2px 2px 4px #0500FF;
+    font-family: 'Indie Flower', cursive;
+    padding: 100px;
+    margin-top: 20px;
+    font-size: 30px;
+    color:#1F1E73;
+    max-width: 135ch;
+
+}
+
+/*.. fondos.. de los textos.. de la intro..*/
+
+
+/* Marco.. de La intro ..? eso creo */
+.Intro{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom:100px;
+    background-image: url('/imagenes/izquierda.png'), url('/imagenes/abajo.png'), url('/imagenes/derecha.png');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left  center, bottom center,right center;
+    background-size: auto 100%, 99% auto, auto 100%;
+
+}
+.cierre{
+    width: 100%;
+    min-height: 200px;
+    background-image: url('/imagenes/abajo.png');
+  
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+   ;
+
+} 
+/* Marco.. de La intro ..? eso creo */
+.SegundaSeccion{
+    padding-left:100px;
+    padding-right:100px;
+    padding-bottom:100px;
+    background-image: url('imagenes/margenlargo.png'),url('imagenes/margenlargod.png');
+    background-repeat: repeat-y;
+    background-position: left top,right top;
+
+}
+/*animacion.. del color.. del titulo =(*/
+main section#banner{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner img{
+    margin-top: -100px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+#sack{
+    display: none;
+    color:#2029D4;
+    text-shadow:4px 3px 6px #2029D4;
+}
+#sahra{
+    
+    display:inline; 
+    color:red;
+    text-shadow:4px 3px 6px #8A0000;
+}
+
+#sahra-sack:hover #sahra{
+    display: none;
+}
+
+#sahra-sack:hover #sack{
+    display: inline;
+}
+footer{
+    background-color:cornflowerblue;
+
+}
+.fotterdialogo #Sam{
+    text-align:justify;
+    text-shadow: 2px 2px 4px #23474F;
+    font-family: 'Indie Flower', cursive;
+    padding: 100px;
+    margin-top: 20px;
+    font-size: 25px;
+    color:#85ECFF;
+    max-width: 100h;
+    /*background-image: url('imagenes/marco.png');*/
+
+    background-repeat: no-repeat;
+    background-size:1390px 350px;
+
+}
+.fotterdialogo{
+    display:flex;
+    gap:30px;
+
+}
+.fotterdialogo #Sackfot{
+    text-align:justify;
+    text-shadow: 2px 2px 4px #0500FF;
+    font-family: 'Indie Flower', cursive;
+    padding: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+    color:#1F1E73;
+    max-width: 100ch;
+    /* background-image: url('imagenes/marco.png');*/
+
+    background-repeat: no-repeat;
+    background-size:1390px 350px;
+}
+.fotterdialogo #Sahrafot{
+    text-align:justify;
+    text-shadow: 2px 2px 4px #FF5E5E;
+    font-family: 'Indie Flower', cursive;
+    padding: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+    color:#BD1E1E;
+    max-width: 100ch;
+    /*background-image: url('imagenes/marco.png');*/
+
+    background-repeat: no-repeat;
+    background-size:1390px 350px;
+}
+footer {
+    section#Sahracierra{
+    text-align: center;
+    text-shadow: 2px 2px 4px #FF5E5E;
+    font-family: 'Indie Flower', cursive;
+    padding: 50px;
+    margin-top: 20px;
+    font-size: 50px;
+    color:#BD1E1E;
+    max-width: 100ch;
+    /*background-image: url('imagenes/marco.png');*/
+
+    background-repeat: no-repeat;
+    background-size:1390px 350px;
+}
+a:link{
+    color: #f0000f;
+}
+}
